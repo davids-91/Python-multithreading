@@ -5,7 +5,7 @@ import MyThread
 
 start_time = time.perf_counter()
 
-for x in range(3000):
+for x in range(30):
     operations.random_numbers(1, 1000000)
 
 end_time = time.perf_counter()
@@ -17,7 +17,7 @@ print("Without using thread library: " + str(elapsed_time))
 
 start_time = time.perf_counter()
 
-for x in range(3000):
+for x in range(30):
     MyThread.myThread(x).start()
 
 end_time = time.perf_counter()
